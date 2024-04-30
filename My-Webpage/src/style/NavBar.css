@@ -1,0 +1,40 @@
+/* NavBar.css */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensures the navbar is on top of other content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.navbar a:hover {
+    text-decoration: underline;
+    color: #1abc9c; /* Teal for a bit of pop */
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline; /* Display links in a line */
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+.nav-links li a.active-link {
+    color: #1abc9c; /* Change color to teal (or any other color) */
+    font-weight: bold; /* Make it bold to highlight */
+}

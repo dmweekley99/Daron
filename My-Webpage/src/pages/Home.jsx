@@ -1,0 +1,30 @@
+import React from 'react';
+import '../style/Home.css'; // Assuming you have some CSS for styling
+
+const Home = () => {
+    return (
+        <div className="home-container">
+            <header className="home-header">
+                <h1>Welcome to My Portfolio!</h1>
+                <img src="/profilepic.jpeg" alt="ProfilePic" className='picture'/>
+                <p>Hi, I'm Daron Weekley</p>
+            </header>
+            <section className="introduction">
+                <p>
+                    Currently pursuing a Master of Science in Computer Science at Marshall University, 
+                    I am passionate about using my skills in software development and bioinformatics to solve real-world problems.
+                </p>
+                <p>
+                    Explore my portfolio to learn more about my educational background, research, 
+                    professional experience, and the technical skills I bring to the table.
+                </p>
+                <p>
+                    Also, here is a link to my GitHub so you can view my projects.
+                </p>
+                <link rel="stylesheet" href="" />
+            </section>
+        </div>
+    );
+}
+
+export default Home;
