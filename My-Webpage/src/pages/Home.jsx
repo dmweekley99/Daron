@@ -19,9 +19,9 @@ const Home = () => {
                     professional experience, and the technical skills I bring to the table.
                 </p>
                 <p>
-                    Also, here is a link to my GitHub so you can view my projects.
+                    Also, here is a <a href="https://github.com/dmweekley99/" target="_blank" rel="noopener noreferrer">link to my GitHub</a> so you can view my projects.
                 </p>
-                <link rel="stylesheet" href="" />
+                
             </section>
         </div>
     );

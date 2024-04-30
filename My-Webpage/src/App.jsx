@@ -6,7 +6,6 @@ import Home from './pages/Home';
 import MyStory from './pages/MyStory';
 import WorkExperience from './pages/WorkExperience';
 import Publications from './pages/Publications';
-import Leadership from './pages/Leadership';
 import ContactInfo from './pages/ContactInfo';
 
 function App() {
