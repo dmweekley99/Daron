@@ -6,7 +6,7 @@ const Home = () => {
         <div className="home-container">
             <header className="home-header">
                 <h1>Welcome to My Portfolio!</h1>
-                <img src="/profilepic.jpeg" alt="ProfilePic" className='picture'/>
+                <img src="profilepic.jpeg" alt="ProfilePic" className='picture'/>
                 <p>Hi, I'm Daron Weekley</p>
             </header>
             <section className="introduction">
