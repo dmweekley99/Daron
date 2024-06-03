@@ -54,6 +54,7 @@
 
     .nav-links li {
         margin-bottom: 10px; 
+        display: inline;
     }
 
     .nav-links li:last-child {
@@ -67,21 +68,5 @@
 
     .nav-links li a:hover {
         text-decoration: none;
-    }
-
-    .menu-icon {
-        display: block; 
-        color: white;
-        font-size: 24px;
-        cursor: pointer; 
-        margin-right: 20px;
-    }
-
-    .menu-icon:hover {
-        color: #1abc9c; 
-    }
-
-    .menu-icon.active {
-        color: #1abc9c;
     }
 }
