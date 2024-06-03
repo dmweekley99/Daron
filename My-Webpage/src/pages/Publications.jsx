@@ -54,7 +54,7 @@ const Publications = () => {
           {visiblePdfs.includes(index) && (
             <iframe 
               src={pub.pdf} 
-              width="100%" // Use percentage for responsive width
+              width="80%" // Use percentage for responsive width
               height="600"
               style={{ border: 'none', marginTop: '20px' }}
               title="PDF Viewer"

@@ -9,13 +9,13 @@
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1000; /* Ensures the navbar is on top of other content */
+    z-index: 1000; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .navbar a:hover {
     text-decoration: underline;
-    color: #1abc9c; /* Teal for a bit of pop */
+    color: #1abc9c; 
 }
 
 .nav-links {
@@ -24,7 +24,7 @@
 }
 
 .nav-links li {
-    display: inline; /* Display links in a line */
+    display: inline; 
     margin-right: 20px;
 }
 
@@ -38,34 +38,33 @@
 }
 
 .nav-links li a.active-link {
-    color: #1abc9c; /* Change color to teal (or any other color) */
-    font-weight: bold; /* Make it bold to highlight */
+    color: #1abc9c; 
+    font-weight: bold; 
 }
 
 /* Media query for screens smaller than 768px (mobile devices) */
 @media screen and (max-width: 768px) {
     .navbar {
-        padding: 10px; /* Reduce padding for a more compact navbar */
+        padding: 10px; 
     }
 
     .nav-links {
-        display: none; /* Hide the navigation links */
-        text-align: center; /* Center the hamburger icon */
+        text-align: center;
     }
 
     .nav-links li {
-        display: block; /* Display links as a list */
-        margin-bottom: 10px; /* Add some space between links */
+        display: block; 
+        margin-bottom: 10px; 
     }
 
     .nav-links li:last-child {
-        margin-bottom: 0; /* Remove margin for the last link */
+        margin-bottom: 0; 
     }
 
     .nav-links li a {
-        display: block; /* Make links full width */
-        padding: 10px 0; /* Add padding to improve touchability */
-        border-top: 1px solid #555; /* Add a border between links */
+        display: block; 
+        padding: 10px 0; 
+        border-top: 1px solid #555; 
     }
 
     .nav-links li a:hover {
@@ -73,18 +72,18 @@
     }
 
     .menu-icon {
-        display: block; /* Show the hamburger icon */
+        display: block; 
         color: white;
         font-size: 24px;
-        cursor: pointer; /* Change cursor to pointer for better UX */
+        cursor: pointer; 
         margin-right: 20px;
     }
 
     .menu-icon:hover {
-        color: #1abc9c; /* Change color on hover */
+        color: #1abc9c; 
     }
 
     .menu-icon.active {
-        color: #1abc9c; /* Change color when menu is open */
+        color: #1abc9c;
     }
 }

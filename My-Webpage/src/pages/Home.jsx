@@ -8,7 +8,7 @@ const Home = () => {
             <header className="home-header">
                 <h1 className='publication'>Welcome to My Portfolio!</h1>
                 <img src="pp2.jpg" alt="ProfilePic" className='picture'/>
-                <p>Hi, I'm Daron Weekley</p>
+                <h2>Hi, I'm Daron Weekley</h2>
             </header>
             <section className="introduction">
                 <p>

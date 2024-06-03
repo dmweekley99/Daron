@@ -36,6 +36,8 @@
 .picture {
     height: auto; /* Allow height to adjust based on content */
     max-width: 40%; /* Ensure image doesn't exceed container width */
+    border: solid 2px gray;
+    border-radius: 30px;
 }
 /* Media query for screens smaller than 768px (mobile devices) */
 @media screen and (max-width: 768px) {
