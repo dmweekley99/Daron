@@ -42,14 +42,6 @@ const Publications = () => {
           <div 
             onClick={() => togglePdfVisibility(index)} 
             className='pdf-banner'
-            style={{ 
-              cursor: 'pointer', 
-              padding: '20px', 
-              backgroundColor: '#f0f0f0', 
-              textAlign: 'center', 
-              margin: '20px 50px',
-              border: '1px solid #ccc'
-            }}
           >
             {visiblePdfs.includes(index) ? 'Click to Close PDF' : (
               <span>
@@ -62,7 +54,7 @@ const Publications = () => {
           {visiblePdfs.includes(index) && (
             <iframe 
               src={pub.pdf} 
-              width="800" 
+              width="100%" // Use percentage for responsive width
               height="600"
               style={{ border: 'none', marginTop: '20px' }}
               title="PDF Viewer"

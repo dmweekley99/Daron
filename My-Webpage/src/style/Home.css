@@ -4,11 +4,11 @@
     color: #273c75; /* Dark blue text */
     background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
     border-radius: 10px;
-    width: 1000px;
+    width: 90%; /* Use percentage for responsive width */
+    max-width: 1000px; /* Maximum width for PC */
     margin: 100px auto;
     -webkit-text-stroke: .2px black;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
 }
 
 .home-header h1 {
@@ -34,7 +34,21 @@
 }
 
 .picture {
-    height: 400px;
-    width: 320px;
+    height: auto; /* Allow height to adjust based on content */
+    max-width: 40%; /* Ensure image doesn't exceed container width */
 }
+/* Media query for screens smaller than 768px (mobile devices) */
+@media screen and (max-width: 768px) {
+    .home-container {
+        margin: 50px auto;
+        padding: 10px;
+    }
 
+    .introduction p {
+        font-size: 16px;
+    }
+
+    .home-footer a {
+        font-size: 18px;
+    }
+}

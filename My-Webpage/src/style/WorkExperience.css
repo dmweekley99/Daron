@@ -1,6 +1,6 @@
+/* For PC */
 .work-container {
     text-align: center;
-    padding: 20px;
     color: #273c75; /* Dark blue text */
     background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
     border-radius: 10px;
@@ -20,7 +20,17 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
 }
 
-.underline {
-    text-decoration: underline #273c75;
-    color: #273c75;
+/* For mobile */
+@media (max-width: 768px) {
+    .work-container {
+        width: 90%; /* Use percentage for responsive width */
+        margin: 50px auto; /* Adjust margin for mobile */
+        padding: 10px; /* Reduce padding for mobile */
+    }
+
+    .work-section {
+        margin-bottom: 10px; /* Reduce space between sections for mobile */
+        padding: 15px; /* Reduce padding inside each section for mobile */
+    }
 }
+
