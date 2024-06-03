@@ -42,7 +42,7 @@
 /* Media query for screens smaller than 768px (mobile devices) */
 @media screen and (max-width: 768px) {
     .home-container {
-        margin: 50px auto;
+        margin: 60px auto;
         padding: 10px;
     }
 
