@@ -1,11 +1,13 @@
 import React from 'react'
 import "../style/MyStory.css"
+import "../style/Publication.css"
+
 
 const MyStory = () => {
   return (
     <>
     <div className='story-container'>
-    <h1 className='underline'>
+    <h1 className='publication'>
         My Story
     </h1>
     <p>

@@ -1,0 +1,22 @@
+.publication {
+    text-transform: uppercase;
+}
+
+.pdf-banner {
+    cursor: pointer;
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 20px 50px;
+    border: 1px solid #ccc;
+}
+
+.pdf-banner:hover {
+    background-color: #e0e0e0; /* Slightly darker background on hover */
+    text-decoration: underline; /* Underline text on hover */
+}
+
+.pdf-banner span {
+    font-weight: bold;
+}
+  

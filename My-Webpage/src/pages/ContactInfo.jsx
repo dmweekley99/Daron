@@ -1,10 +1,11 @@
 import React from 'react'
 import "../style/WorkExperience.css"
+import "../style/Publication.css"
 
 const ContactInfo = () => {
   return (
     <div className='story-container'>
-      <h1 className='underline'>Contact Me by Phone or Email</h1>
+      <h1 className='publication'>Contact Me by Phone or Email</h1>
       <div className='work-section'>
         <h2 className='underline'>
           Phone:

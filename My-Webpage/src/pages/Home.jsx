@@ -1,12 +1,13 @@
 import React from 'react';
 import '../style/Home.css'; // Assuming you have some CSS for styling
+import "../style/Publication.css"
 
 const Home = () => {
     return (
         <div className="home-container">
             <header className="home-header">
-                <h1>Welcome to My Portfolio!</h1>
-                <img src="profilepic.jpeg" alt="ProfilePic" className='picture'/>
+                <h1 className='publication'>Welcome to My Portfolio!</h1>
+                <img src="pp2.jpg" alt="ProfilePic" className='picture'/>
                 <p>Hi, I'm Daron Weekley</p>
             </header>
             <section className="introduction">

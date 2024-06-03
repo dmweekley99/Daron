@@ -1,10 +1,12 @@
 import React from 'react'
 import "../style/WorkExperience.css"
+import "../style/Publication.css"
+
 
 const WorkExperience = () => {
   return (
     <div className='work-container'>
-      <h1 className='underline'>
+      <h1 className='publication'>
         Work Experience
       </h1>
       <div className='work-section'>
