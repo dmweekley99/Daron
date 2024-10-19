@@ -11,7 +11,7 @@ const Publications = () => {
       volume: '13(10)',
       pages: '837',
       doi: 'https://doi.org/10.3390/cells13100837',
-      pdf: 'Publication-2.pdf'
+      pdf: '../public/Publication-2.pdf'
     },
     {
       title: 'Role of dipA and pilD in Francisella tularensis Susceptibility to Resazurin',
@@ -21,7 +21,7 @@ const Publications = () => {
       volume: '10(992)',
       pages: '1–10',
       doi: 'https://doi.org/10.3390/antibiotics10080992',
-      pdf: 'antibiotics-10-00992.pdf'
+      pdf: '../public/antibiotics-10-00992.pdf'
     },
   ];
   const [visiblePdfs, setVisiblePdfs] = useState([]);
