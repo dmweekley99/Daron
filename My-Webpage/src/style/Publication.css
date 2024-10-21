@@ -23,10 +23,9 @@
   @media screen and (max-width: 768px) {
     .pdf-banner {
       margin: 20px 5%; /* Adjusted margin for smaller screens */
-      font: 5vw;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      max-width: 40ch;
+      word-wrap: break-word; /* Allows long words to break and wrap to the next line */
+      overflow-wrap: break-word;
     }
   }
   
