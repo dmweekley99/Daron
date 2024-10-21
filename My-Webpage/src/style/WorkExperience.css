@@ -24,7 +24,7 @@
 @media (max-width: 768px) {
     .work-container {
         width: 90%; /* Use percentage for responsive width */
-        margin: 50px auto; /* Adjust margin for mobile */
+        margin: 80px auto; /* Adjust margin for mobile */
         padding: 10px; /* Reduce padding for mobile */
     }
 

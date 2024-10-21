@@ -14,7 +14,7 @@
 /* Media query for screens smaller than 768px (mobile devices) */
 @media screen and (max-width: 768px) {
     .story-container {
-        margin: 50px auto;
+        margin: 80px auto;
         padding: 10px;
     }
 }
