@@ -22,7 +22,6 @@
   /* Media query for screens smaller than 768px (mobile devices) */
   @media screen and (max-width: 768px) {
     .pdf-banner {
-      margin-top: 50px;
       margin: 20px 5%; /* Adjusted margin for smaller screens */
       font: 8px;
     }
