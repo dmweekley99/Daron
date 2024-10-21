@@ -23,7 +23,7 @@
   @media screen and (max-width: 768px) {
     .pdf-banner {
       margin: 20px 5%; /* Adjusted margin for smaller screens */
-      font: 8px;
+      font: 5vw;
     }
   }
   
