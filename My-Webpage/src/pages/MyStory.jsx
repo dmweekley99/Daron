@@ -50,9 +50,9 @@ const MyStory = () => {
     <p>
         Transitioning from biomedical sciences, I pursued and was accepted into the Computer 
         Science Master's program at Marshall University in June 2023. Achieving a notable GPA 
-        of 3.85, my studies now include advanced computing languages and frameworks such as React, 
+        of 4.00 in my master's classes, my studies included advanced computing languages and frameworks such as React, 
         Django, Python, HTML, CSS, SQL, Git/GitHub, and Java. These tools have not only equipped me 
-        with the necessary skills but have also ignited a passion for developing software solutions 
+        with the necessary skills, but have also ignited a passion for developing software solutions 
         that address real-world problems. 
     </p>
     <p>

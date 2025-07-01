@@ -19,15 +19,7 @@ const ContactInfo = () => {
           Personal Email: 
         </h2>
         <h3>
-          dweekley99@gmail.com
-        </h3>
-      </div>
-      <div className='work-section'>
-        <h2 className='underline'>
-          School Email:
-        </h2>
-        <h3>
-          weekley49@marshall.edu
+          <a href="mailto:dweekley99@gmail.com">dweekley99@gmail.com</a>
         </h3>
       </div>
     </div>
