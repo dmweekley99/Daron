@@ -11,59 +11,67 @@ const WorkExperience = () => {
       </h1>
       <div className='work-section'>
         <h2 className='underline'>
-          Substitute Teacher 
+          Software Development Intern
         </h2>
         <h3>
-          Tyler County Schools in West Virginia | 8/23-Present
+          Next Gen Federal Systems | 1/25 - Present
         </h3>
-        <p>
-          As a substitute teacher in Tyler County, I work primarily in high school to help young adults advance 
-          their understanding of various subjects. This experience is helping me to increase my leadership skills, 
-          as well as helping me learn how to adapt to change. These changes could be anything from a forgotten lesson 
-          plan to teaching a plethora of subjects a week and trying to re-learn different intricacies of the subject 
-          matter that I am teaching on a particular day.
-        </p>
+            <p>Develop and deploy Angular-based frontends for ML pipelines</p>
+            <p>Use Docker, Kubernetes, Helm, Git, and WSL for container orchestration</p>
+            <p>Enhance usability and customer satisfaction in a machine learning platform</p>
       </div>
       <div className='work-section'>
         <h2 className='underline'>
-          Ph.D. Student Researcher        
+          Graduate Researcher (Computer Science)
+        </h2>
+        <h3>
+          Marshall University | 11/24 - 06/25
+        </h3>
+            <p>Used PyTorch and vedo to analyze cranial landmarks in 3D mesh data</p>
+            <p>Worked on decimation and segmentation tradeoffs in oral-cranial structures</p>
+            <p>Published findings on efficiency and segmentation accuracy balance</p>
+      </div>
+      <div className='work-section'>
+        <h2 className='underline'>
+          Substitute Teacher 
+        </h2>
+        <h3>
+          Tyler County Schools in West Virginia | 8/23 - Present
+        </h3>
+            <p>Managed classrooms and followed lesson plans across grade levels</p>
+            <p>Strengthened leadership, communication, and public speaking</p>
+      </div>
+      <div className='work-section'>
+        <h2 className='underline'>
+          Ph.D. Student Researcher (Biomedical Science)    
         </h2>
         <h3>
           Marshall University | 7/22 - 7/23        
         </h3>
-        <p>
-          As a Ph.D. student at Marshall University, I did two semesters of lab rotations. The first lab rotation was 
-          in Dr. Chris Risher’s lab, studying the effects that prenatal opioid exposure has on the astrocytes of fetal 
-          mice brains. This lab provided me with cell culture and animal experience. The next rotation was with Dr. Alejandro 
-          Nato, in which I focused on bioinformatics and developed coding skills with R and Unix/Bash scripting. 
-        </p>
+          <p>Developed murine-human gene database using R</p>
+          <p>Focused on genetic sequencing, bioinformatics workflows</p>
+          <p>Worked with cell cultures, EM imaging, and murine harvesting</p>
+          <p>Co-author to published findings on the impact of murine NAS on astrocyte function.</p>
       </div>
       <div className='work-section'>
         <h2 className='underline'>
-          Graduate Researcher
+          Graduate Researcher (Biology)
         </h2>
         <h3>
           West Liberty University | 5/21 - 5/22
         </h3>
-        <p>
-          As a graduate researcher, I studied the mechanism through which thyrotoxicosis causes craniosynostosis in an avian model. 
-          I was also working with histological staining of various types of cadaver tissue to determine the best methods for effectively 
-          processing and staining embalmed tissue.
-        </p>
+          <p>Worked on histology, dissection, lab management, sanitation protocols, statistical analysis</p>
+          <p>Integrated technology to improve lab workflows</p>
       </div>
       <div className='work-section'>
         <h2 className='underline'>
-          Undergraduate Researcher    
+          Undergraduate Researcher (Biology)
         </h2>
         <h3>
           West Liberty University | 5/19 - 3/20           
         </h3>
-        <p>
-          As an undergraduate researcher, I studied the <i>pilD</i> gene in <i>Francisella tularensis</i> to determine if the gene played 
-          a role in the bacterium’s vulnerability to a novel strain of antibiotics called resazomycins. This research aims 
-          to determine how resazomycins inhibit <i>Francisella tularensis</i> to help develop a new antibiotic to combat antibiotic 
-          resistance.
-        </p>
+          <p>Developed skills using PCR, purification, sterilization, and lab management</p>
+          <p>Co-author to published findings on the genetic susceptibility of bacteria to a novel antibiotic.</p>
       </div>
     </div>
   )

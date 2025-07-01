@@ -12,8 +12,8 @@ const Home = () => {
             </header>
             <section className="introduction">
                 <p>
-                    Currently pursuing a Master of Science in Computer Science at Marshall University, 
-                    I am passionate about using my skills in software development and bioinformatics to solve real-world problems.
+                    Being a recent graduate of the M.S. in Computer Science program through Marshall University, 
+                    I am passionate about using my skills in computer science and biology to solve real-world problems.
                 </p>
                 <p>
                     Explore my portfolio to learn more about my educational background, research, 

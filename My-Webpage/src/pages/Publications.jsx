@@ -4,6 +4,15 @@ import "../style/Publication.css";
 const Publications = () => {
   const publications = [
     {
+      title: 'Evaluating the Suitability of Different Intraoral Scan Resolutions for Deep Learning-Based Tooth Segmentation',
+      authors: 'Weekley, D., Duckworth, J., Sukhanova, A., Jana, A.',
+      year: '2025',
+      journal: 'ArXiv',
+      volume: 'abs/2502.19515',
+      doi: 'https://doi.org/10.48550/arXiv.2502.19515',
+      pdf: '/CS-Teeth-firstauthor.pdf'
+    },
+    {
       title: 'Abnormal Morphology and Synaptogenic Signaling in Astrocytes Following Prenatal Opioid Exposure',
       authors: 'Niebergall, E. B., Weekley, D., Mazur, A., Olszewski, N. A., DeSchepper, K. M., Radant, N., Vijay, A. S., & Risher, W. C.',
       year: '2024',
@@ -39,21 +48,21 @@ const Publications = () => {
       <h1 className='publication'>Publications</h1>
       {publications.map((pub, index) => (
         <div key={index}>
-          <div 
-            onClick={() => togglePdfVisibility(index)} 
+          <div
+            onClick={() => togglePdfVisibility(index)}
             className='pdf-banner'
           >
             {visiblePdfs.includes(index) ? 'Click to Close PDF' : (
               <span>
-                <strong>{pub.authors} ({pub.year}). {pub.title}. {pub.journal}, {pub.volume}, {pub.pages}. <br />
-                {pub.doi}</strong>
+                <strong>{pub.authors} ({pub.year}), {pub.title}, {pub.journal}, {pub.volume}, {pub.pages} <br />
+                  {pub.doi}</strong>
               </span>
             )}
           </div>
-          
+
           {visiblePdfs.includes(index) && (
-            <iframe 
-              src={pub.pdf} 
+            <iframe
+              src={pub.pdf}
               width="80%" // Use percentage for responsive width
               height="600"
               style={{ border: 'none', marginTop: '20px' }}
