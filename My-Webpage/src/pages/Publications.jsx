@@ -1,7 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "../style/Publication.css";
 
 const Publications = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   const publications = [
     {
       title: 'Evaluating the Suitability of Different Intraoral Scan Resolutions for Deep Learning-Based Tooth Segmentation',
@@ -33,14 +44,19 @@ const Publications = () => {
       pdf: '/antibiotics-10-00992.pdf'
     },
   ];
+
   const [visiblePdfs, setVisiblePdfs] = useState([]);
 
-  const togglePdfVisibility = (index) => {
-    setVisiblePdfs((prevVisiblePdfs) =>
-      prevVisiblePdfs.includes(index)
-        ? prevVisiblePdfs.filter((i) => i !== index)
-        : [...prevVisiblePdfs, index]
-    );
+  const handleClick = (index, doi) => {
+    if (isMobile) {
+      window.open(doi, '_blank', 'noopener,noreferrer');
+    } else {
+      setVisiblePdfs((prev) =>
+        prev.includes(index)
+          ? prev.filter((i) => i !== index)
+          : [...prev, index]
+      );
+    }
   };
 
   return (
@@ -49,32 +65,38 @@ const Publications = () => {
       {publications.map((pub, index) => (
         <div key={index}>
           <div
-            onClick={() => togglePdfVisibility(index)}
+            onClick={() => handleClick(index, pub.doi)}
             className='pdf-banner'
+            style={{ cursor: 'pointer' }}
           >
-            {visiblePdfs.includes(index) ? 'Click to Close PDF' : (
-              <span>
-                <strong>{pub.authors} ({pub.year}), {pub.title}, {pub.journal}, {pub.volume}, {pub.pages} <br />
-                  {pub.doi}</strong>
-              </span>
-            )}
+            {visiblePdfs.includes(index) && !isMobile
+              ? 'Click to Close'
+              : (
+                <span>
+                  <strong>
+                    {pub.authors} ({pub.year}), {pub.title}, {pub.journal}, {pub.volume}, {pub.pages} <br />
+                    {pub.doi}
+                  </strong>
+                </span>
+              )}
           </div>
 
-          {visiblePdfs.includes(index) && (
-            <iframe
-              src={pub.pdf}
-              width="80%" // Use percentage for responsive width
-              height="600"
-              style={{ border: 'none', marginTop: '20px' }}
-              title="PDF Viewer"
-            >
-              Sorry, your browser does not support PDFs. <a href={pub.pdf}>Download PDF</a>
-            </iframe>
+          {/* Only show iframe on desktop and if visible */}
+          {visiblePdfs.includes(index) && !isMobile && (
+            <div style={{ marginTop: '20px' }}>
+              <iframe
+                src={pub.pdf}
+                width="100%"
+                height="600"
+                style={{ border: 'none' }}
+                title="PDF Viewer"
+              ></iframe>
+            </div>
           )}
         </div>
       ))}
     </div>
   );
-}
+};
 
 export default Publications;
