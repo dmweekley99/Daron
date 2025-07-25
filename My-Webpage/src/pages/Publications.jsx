@@ -24,6 +24,15 @@ const Publications = () => {
       pdf: '/CS-Teeth-firstauthor.pdf'
     },
     {
+      title: 'Validating a Novel Model of Induced-Thyrotoxicosis in White Leghorn Chicken.',
+      authors: 'Vopal, H., Hill , T., Dwiggins, A. ., Corrick, C., Ankrom, H., Gray, P., Bogunovich, K. ., Morais, L., Carter, H., & Weekley, D.',
+      year: '2025',
+      journal: 'Proceedings of the West Virginia Academy of Science',
+      volume: '97(1)',
+      doi: 'https://pwvas.org/index.php/pwvas/article/view/1207',
+      pdf: '/Avian_Research_Publication.pdf'
+    },
+    {
       title: 'Abnormal Morphology and Synaptogenic Signaling in Astrocytes Following Prenatal Opioid Exposure',
       authors: 'Niebergall, E. B., Weekley, D., Mazur, A., Olszewski, N. A., DeSchepper, K. M., Radant, N., Vijay, A. S., & Risher, W. C.',
       year: '2024',
