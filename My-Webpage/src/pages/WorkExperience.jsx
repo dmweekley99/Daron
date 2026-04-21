@@ -11,10 +11,21 @@ const WorkExperience = () => {
       </h1>
       <div className='work-section'>
         <h2 className='underline'>
+          Laboratory Technician
+        </h2>
+        <h3>
+          West Liberty University | 12/25 - Present
+        </h3>
+            <p>Performed a variety of cell and bacterial cultures to run genetic testing and RNA sequencing</p>
+            <p>Launched statistical tests to make graphics to present the results of research.</p>
+            <p>Collaborated with professors and students in a professional setting.</p>
+      </div>
+      <div className='work-section'>
+        <h2 className='underline'>
           Software Development Intern
         </h2>
         <h3>
-          Next Gen Federal Systems | 1/25 - Present
+          Next Gen Federal Systems | 1/25 - 1/26
         </h3>
             <p>Develop and deploy Angular-based frontends for ML pipelines</p>
             <p>Use Docker, Kubernetes, Helm, Git, and WSL for container orchestration</p>
